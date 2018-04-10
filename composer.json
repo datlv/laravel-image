@@ -1,0 +1,48 @@
+{
+    "name": "datlv/laravel-image",
+    "description": "Laravel Image Package",
+    "keywords": [
+        "Datlv",
+        "laravel",
+        "image"
+    ],
+    "homepage": "https://github.com/datlv/laravel-image",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Datlv",
+            "email": "datle2011@gmail.com",
+            "homepage": "http://Datlv.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0.0",
+        "intervention/image": "^2.3"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datlv\\Image\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datlv\\Image\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Datlv\\Image\\ServiceProvider"
+            ]
+        }
+    }
+}
